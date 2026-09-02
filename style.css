@@ -1380,8 +1380,8 @@ select{
   font-weight: 600 !important;
   opacity: 1 !important;
 
-  background: rgba(244, 239, 232, 0.78);
-  padding: 10px 14px;
+  background: rgba(244, 239, 232, 0.68);
+padding: 8px 12px;
   border-radius: 2px;
 
   line-height: 1.6;
