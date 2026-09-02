@@ -496,6 +496,8 @@ select{
 }
 
 
+
+
 /* =========================
    AVIS CLIENTS / CARROUSEL
 ========================= */
@@ -506,58 +508,44 @@ select{
 
 .reviews-carousel {
   position: relative;
-  margin-top: 48px;
+  width: 100%;
+  max-width: 880px;
+  margin: 48px auto 0;
   overflow: hidden;
 }
 
 .reviews-track {
   display: flex;
-  transition: transform 0.6s ease;
+  width: 100%;
+  transition: transform 0.55s ease;
   will-change: transform;
 }
 
 .reviews-slide {
+  flex: 0 0 100%;
+  width: 100%;
   min-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
 }
 
 .review-card {
   background: #ffffff;
   border: 1px solid rgba(13, 20, 36, 0.08);
-  padding: 34px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 42px 46px;
   box-shadow: 0 18px 45px rgba(13, 20, 36, 0.06);
 }
 
-.review-demo-label {
-  display: inline-block;
-  align-self: flex-start;
-  margin-bottom: 18px;
-  padding: 6px 10px;
-  border: 1px solid rgba(13, 20, 36, 0.12);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #687080;
-}
-
 .review-stars {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+  color: #0d1424;
   font-size: 1rem;
   letter-spacing: 0.16em;
-  color: #0d1424;
 }
 
 .review-card blockquote {
-  margin: 0 0 30px;
-  font-family: "Playfair Display", serif;
-  font-size: 1.25rem;
+  margin: 0 0 34px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 500;
   line-height: 1.55;
   color: #0d1424;
 }
@@ -571,26 +559,34 @@ select{
 }
 
 .review-author strong {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
+  color: #0d1424;
 }
 
 .review-author span {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #687080;
 }
 
+
+/* NAVIGATION */
+
 .reviews-controls {
-  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
+  margin-top: 28px;
 }
 
 .reviews-arrow {
-  width: 42px;
-  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border: 1px solid rgba(13, 20, 36, 0.16);
   background: transparent;
   color: #0d1424;
@@ -608,6 +604,7 @@ select{
 .reviews-dots {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -630,35 +627,45 @@ select{
 
 
 /* =========================
-   MOBILE
+   AVIS CLIENTS - MOBILE
 ========================= */
 
 @media (max-width: 768px) {
 
   .reviews-carousel {
-    margin-top: 36px;
-  }
-
-  .reviews-slide {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    margin-top: 34px;
   }
 
   .review-card {
-    padding: 26px 22px;
+    padding: 30px 24px;
+  }
+
+  .review-stars {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
   }
 
   .review-card blockquote {
-    font-size: 1.12rem;
-    line-height: 1.6;
+    margin-bottom: 28px;
+    font-size: 1.18rem;
+    line-height: 1.55;
+  }
+
+  .review-author {
+    padding-top: 18px;
   }
 
   .reviews-controls {
-    margin-top: 24px;
+    margin-top: 22px;
+    gap: 14px;
+  }
+
+  .reviews-arrow {
+    width: 40px;
+    height: 40px;
   }
 
 }
-
 
 
 
