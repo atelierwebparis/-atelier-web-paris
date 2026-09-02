@@ -1363,3 +1363,10 @@ select{
   }
 
 }
+
+/* Correction définitive texte localisation hero */
+
+.hero-location {
+  color: #0d1424 !important;
+  opacity: 1 !important;
+}
