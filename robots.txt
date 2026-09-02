@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atelierwebparis.github.io/-atelier-web-paris/sitemap.xml
