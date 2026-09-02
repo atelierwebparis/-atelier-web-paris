@@ -982,3 +982,210 @@ select{
   }
 
 }
+
+
+/* =========================
+   PAGE CRÉATION DE SITE INTERNET
+========================= */
+
+.page-hero{
+  padding:170px 0 110px;
+  background:var(--ivory);
+}
+
+.page-hero-inner{
+  max-width:900px;
+}
+
+.page-hero h1{
+  font-family:"Playfair Display", Georgia, serif;
+  font-size:clamp(54px,6vw,82px);
+  line-height:1;
+  font-weight:500;
+  letter-spacing:-.035em;
+  max-width:860px;
+}
+
+.page-hero h1 span{
+  display:block;
+  color:var(--blue);
+  font-style:italic;
+}
+
+.page-hero-description{
+  max-width:720px;
+  margin-top:28px;
+  font-size:18px;
+  color:#343A43;
+}
+
+.page-hero .hero-location{
+  margin-top:28px;
+}
+
+.page-hero .hero-actions{
+  margin-top:32px;
+}
+
+
+/* =========================
+   CHOIX DE FORMULE
+========================= */
+
+.choice-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+
+.choice-card{
+  background:var(--offwhite);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:34px;
+}
+
+.choice-number{
+  color:var(--blue);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.08em;
+  margin-bottom:20px;
+}
+
+.choice-card h3{
+  font-family:"Playfair Display", Georgia, serif;
+  font-size:30px;
+  line-height:1.12;
+  font-weight:500;
+  margin-bottom:18px;
+}
+
+.choice-card p{
+  color:var(--muted);
+  font-size:15px;
+}
+
+
+/* =========================
+   SEO COMPARAISON
+========================= */
+
+.seo-comparison{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+
+.seo-card{
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:12px;
+  padding:38px;
+  background:rgba(255,255,255,.03);
+}
+
+.seo-card.featured{
+  border-color:var(--blue);
+}
+
+.seo-card .offer-label{
+  color:#9FB7FF;
+}
+
+.seo-card h3{
+  font-family:"Playfair Display", Georgia, serif;
+  font-size:32px;
+  line-height:1.12;
+  font-weight:500;
+  margin:14px 0 18px;
+}
+
+.seo-card p{
+  color:#C4C9D1;
+}
+
+.seo-disclaimer{
+  max-width:800px;
+  margin-top:34px;
+  color:#AEB4BE;
+  font-size:14px;
+}
+
+
+/* =========================
+   INCLUS DANS TOUS NOS SITES
+========================= */
+
+.included-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:26px;
+}
+
+
+/* =========================
+   CONTACT EMAIL CTA
+========================= */
+
+.contact-email{
+  margin-top:22px;
+  color:#C4C9D1;
+  font-size:14px;
+}
+
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media(max-width:980px){
+
+  .page-hero{
+    padding:145px 0 90px;
+  }
+
+  .choice-grid,
+  .seo-comparison,
+  .included-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+  .page-hero{
+    padding:120px 0 72px;
+  }
+
+  .page-hero h1{
+    font-size:clamp(44px,12vw,58px);
+    line-height:1;
+  }
+
+  .page-hero-description{
+    font-size:16px;
+  }
+
+  .choice-grid,
+  .seo-comparison,
+  .included-grid{
+    grid-template-columns:1fr;
+  }
+
+  .choice-card,
+  .seo-card{
+    padding:28px 22px;
+  }
+
+  .choice-card h3,
+  .seo-card h3{
+    font-size:28px;
+  }
+
+}
