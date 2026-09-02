@@ -1372,9 +1372,17 @@ select{
 
 }
 
-/* Correction définitive texte localisation hero */
+/* Localisation hero - lisibilité */
 
 .hero-location {
+  display: inline-block;
   color: #0d1424 !important;
+  font-weight: 600 !important;
   opacity: 1 !important;
+
+  background: rgba(244, 239, 232, 0.78);
+  padding: 10px 14px;
+  border-radius: 2px;
+
+  line-height: 1.6;
 }
