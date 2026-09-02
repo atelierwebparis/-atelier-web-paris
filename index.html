@@ -1710,6 +1710,10 @@
 
 <script>
 
+  /* =========================
+     MENU MOBILE
+  ========================= */
+
   const menuButton =
     document.querySelector('.mobile-menu-btn');
 
@@ -1749,6 +1753,84 @@
     });
 
   });
+
+
+  /* =========================
+     CARROUSEL AVIS
+  ========================= */
+
+  const reviewsTrack =
+    document.querySelector('.reviews-track');
+
+  const reviewSlides =
+    document.querySelectorAll('.reviews-slide');
+
+  const reviewDots =
+    document.querySelectorAll('.review-dot');
+
+  const prevReview =
+    document.querySelector('.reviews-prev');
+
+  const nextReview =
+    document.querySelector('.reviews-next');
+
+  let currentReview = 0;
+
+
+  function showReview(index) {
+
+    if (index < 0) {
+      index = reviewSlides.length - 1;
+    }
+
+    if (index >= reviewSlides.length) {
+      index = 0;
+    }
+
+    currentReview = index;
+
+    reviewsTrack.style.transform =
+      `translateX(-${currentReview * 100}%)`;
+
+    reviewDots.forEach((dot, dotIndex) => {
+
+      dot.classList.toggle(
+        'active',
+        dotIndex === currentReview
+      );
+
+    });
+
+  }
+
+
+  nextReview.addEventListener('click', () => {
+    showReview(currentReview + 1);
+  });
+
+
+  prevReview.addEventListener('click', () => {
+    showReview(currentReview - 1);
+  });
+
+
+  reviewDots.forEach((dot, index) => {
+
+    dot.addEventListener('click', () => {
+      showReview(index);
+    });
+
+  });
+
+
+  /* Défilement automatique toutes les 5 secondes */
+
+  setInterval(() => {
+    showReview(currentReview + 1);
+  }, 5000);
+
+
+  showReview(0);
 
 </script>
 
