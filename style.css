@@ -271,21 +271,7 @@ select{
   margin-top:34px;
 }
 
-.hero-location{
 
-  margin-top:36px;
-
-  font-size:12px;
-
-  font-weight:600;
-
-  letter-spacing:.12em;
-
-  text-transform:uppercase;
-
-  color:#0d1424;
-
-}
 
 /* =========================
    TRUST BAR
@@ -1372,17 +1358,23 @@ select{
 
 }
 
-/* Localisation hero - lisibilité */
+/* =========================
+   LOCALISATION SOUS HERO
+========================= */
 
-.hero-location {
-  display: inline-block;
-  color: #0d1424 !important;
-  font-weight: 600 !important;
-  opacity: 1 !important;
+.hero-location-bar {
+  background: #f4efe8;
+  border-top: 1px solid rgba(13, 20, 36, 0.08);
+  border-bottom: 1px solid rgba(13, 20, 36, 0.08);
+}
 
-  background: rgba(244, 239, 232, 0.68);
-padding: 8px 12px;
-  border-radius: 2px;
-
-  line-height: 1.6;
+.hero-location-bar p {
+  margin: 0;
+  padding: 18px 0;
+  text-align: center;
+  color: #0d1424;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
