@@ -57,9 +57,9 @@
          aria-label="Navigation principale">
 
       <a href="creation-site-internet.html">
-  Nos offres
-</a>
-        
+        Nos offres
+      </a>
+
       <a href="#realisations">
         Réalisations
       </a>
@@ -104,41 +104,43 @@
 
     </button>
 
-<div class="mobile-menu" id="mobileMenu">
 
-  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu"
+         id="mobileMenu">
 
-  <a href="creation-site-internet.html">
-    Nos offres
-  </a>
+      <a href="creation-site-internet.html">
+        Nos offres
+      </a>
 
-  <a href="#realisations">
-    Réalisations
-  </a>
+      <a href="#realisations">
+        Réalisations
+      </a>
 
-  <a href="#apropos">
-    À propos
-  </a>
+      <a href="#apropos">
+        À propos
+      </a>
 
-  <a href="#process">
-    Comment ça marche
-  </a>
+      <a href="#process">
+        Comment ça marche
+      </a>
 
-  <a href="#faq">
-    FAQ
-  </a>
+      <a href="#faq">
+        FAQ
+      </a>
 
-  <a href="#contact">
-    Contact
-  </a>
+      <a href="#contact">
+        Contact
+      </a>
 
-  <a href="mailto:contactatelierwebparis@gmail.com?subject=Demande%20de%20devis%20Atelier%20Web%20Paris"
-     class="btn btn-blue mobile-menu-cta">
-    Demander un devis
-  </a>
+      <a href="mailto:contactatelierwebparis@gmail.com?subject=Demande%20de%20devis%20Atelier%20Web%20Paris"
+         class="btn btn-blue mobile-menu-cta">
 
-</div>
-    
+        Demander un devis
+
+      </a>
+
+    </div>
+
   </div>
 
 </header>
@@ -181,7 +183,7 @@
 
       <div class="hero-actions">
 
-        <a href="#services"
+        <a href="creation-site-internet.html"
            class="btn btn-primary">
 
           Découvrir nos offres
@@ -1424,9 +1426,8 @@
           </a>
 
           <a href="creation-site-internet.html">
-  Création de site
-</a>
-            
+            Création de site
+          </a>
 
           <a href="#realisations">
             Réalisations
@@ -1504,26 +1505,53 @@
 
 </footer>
 
+
+
 <script>
-  const menuButton = document.querySelector('.mobile-menu-btn');
-  const mobileMenu = document.getElementById('mobileMenu');
+
+  const menuButton =
+    document.querySelector('.mobile-menu-btn');
+
+  const mobileMenu =
+    document.getElementById('mobileMenu');
+
 
   menuButton.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
 
-    menuButton.setAttribute('aria-expanded', isOpen);
-    menuButton.textContent = isOpen ? '×' : '☰';
+    const isOpen =
+      mobileMenu.classList.toggle('open');
+
+    menuButton.setAttribute(
+      'aria-expanded',
+      isOpen
+    );
+
+    menuButton.textContent =
+      isOpen ? '×' : '☰';
+
   });
+
 
   mobileMenu.querySelectorAll('a').forEach(link => {
+
     link.addEventListener('click', () => {
+
       mobileMenu.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
+
+      menuButton.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
       menuButton.textContent = '☰';
+
     });
+
   });
+
 </script>
-  
+
+
 </body>
 
 </html>
