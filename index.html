@@ -16,11 +16,11 @@
   <meta name="robots"
         content="index, follow">
 
-  <!-- URL officielle de la page -->
+  <!-- URL officielle temporaire -->
   <link rel="canonical"
         href="https://atelierwebparis.github.io/-atelier-web-paris/">
 
-  <!-- Aperçu lors du partage du site -->
+  <!-- Open Graph -->
   <meta property="og:type"
         content="website">
 
@@ -59,6 +59,41 @@
   <!-- CSS -->
   <link rel="stylesheet"
         href="style.css">
+
+  <!-- Données structurées -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://atelierwebparis.github.io/-atelier-web-paris/#organization",
+        "name": "Atelier Web Paris",
+        "url": "https://atelierwebparis.github.io/-atelier-web-paris/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://atelierwebparis.github.io/-atelier-web-paris/5EE2155D-583D-4C96-B18B-63D8548B5A4E.png"
+        },
+        "email": "mailto:contactatelierwebparis@gmail.com",
+        "description": "Atelier Web Paris crée des sites internet professionnels et des sites vitrines pour les indépendants, entrepreneurs et petites entreprises en France.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "France"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://atelierwebparis.github.io/-atelier-web-paris/#website",
+        "url": "https://atelierwebparis.github.io/-atelier-web-paris/",
+        "name": "Atelier Web Paris",
+        "publisher": {
+          "@id": "https://atelierwebparis.github.io/-atelier-web-paris/#organization"
+        },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
 
 </head>
 
