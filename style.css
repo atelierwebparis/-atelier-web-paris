@@ -272,11 +272,19 @@ select{
 }
 
 .hero-location{
+
   margin-top:36px;
+
   font-size:12px;
+
+  font-weight:600;
+
   letter-spacing:.12em;
+
   text-transform:uppercase;
+
   color:#0d1424;
+
 }
 
 /* =========================
