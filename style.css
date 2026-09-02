@@ -476,6 +476,13 @@ select{
   box-shadow:var(--shadow);
 }
 
+.project-visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
 .project-copy h2{
   font-family:"Playfair Display", Georgia, serif;
   font-size:clamp(44px,4.8vw,64px);
@@ -860,9 +867,21 @@ select{
     gap:40px;
   }
 
-  .project-visual{
-    min-height:300px;
-  }
+ .project-visual{
+  min-height:0;
+}
+
+.project-visual img{
+  width:100%;
+  height:auto;
+  max-height:720px;
+  object-fit:cover;
+  object-position:top;
+}
+
+.project-copy{
+  margin-top:12px;
+}
 
   .steps-grid{
     gap:38px;
